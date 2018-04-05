@@ -11,9 +11,10 @@ public class PreferenceUtil {
 	
 	private static final String SHARED_FILE_TITLE = "pref_goodworshipbible";
 	public final static String PREF_AD_VIEW = "ad_view";
+	public final static String PREF_AD_TIME = "ad_time";
 	
 	//==============================================================================================//
-	//================================ ?ï¿½ï¿½ë¦¬í¼?ï¿½ï¿½?ï¿½ï¿½ ???ï¿½ï¿½?ï¿½ï¿½ï¿?? ë¶ˆëŸ¬?ï¿½ï¿½ï¿?? ================================//
+	//================================ ?”„ë¦¬í¼?Ÿ°?Š¤ ???¥?•˜ê³? ë¶ˆëŸ¬?˜¤ê¸? ================================//
 	public static boolean getBooleanSharedData(Context context, String key, boolean defaultData) {
         SharedPreferences pref = context.getSharedPreferences(SHARED_FILE_TITLE, Context.MODE_PRIVATE);
         return pref.getBoolean(key, defaultData);
@@ -56,7 +57,7 @@ public class PreferenceUtil {
     }
     
     /**
-     * ?ï¿½ï¿½ë¸”ë¦¿?ï¿½ï¿½ï¿??
+     * ?…Œë¸”ë¦¿?¸ì§?
      */
     private static final String PREFERENCE_NAME         = "ATTEND_PREFERENCE";
     private static final String KEY_IS_TABLE			= "KEY_IS_TABLE";
